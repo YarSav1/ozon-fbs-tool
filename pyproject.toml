@@ -1,0 +1,23 @@
+[project]
+name = "ozon-fbs-tool"
+version = "0.1.0"
+description = "Command-line helper for Ozon FBS: list postings, ship them from an Excel list, print labels"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["httpx>=0.27", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ozon_fbs"]

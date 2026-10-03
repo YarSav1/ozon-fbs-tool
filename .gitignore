@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.sqlite
+config.json
+.pytest_cache/
+*.csv
+*.pdf
+*.xlsx
